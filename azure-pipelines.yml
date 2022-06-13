@@ -17,6 +17,6 @@ steps:
     checkLatest: true
 
 - script: which node
-- script: npm install sfdx
-- script: sfdx --version
+- script: npm install @salesforce/cli --global
+- script: sf version
 
