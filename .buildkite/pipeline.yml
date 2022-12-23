@@ -1,4 +1,4 @@
 steps:
   - label: ":hammer: Install sfdx"
-    command: bash -ex ./scripts/install.sh
+    command: "install.sh"
           
