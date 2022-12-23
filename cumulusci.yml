@@ -1,0 +1,25 @@
+minimum_cumulusci_version: '3.70.0'
+project:
+    name: sfdc-thanos
+    package:
+        name: sfdc-thanos
+        api_version: '55.0'
+    git:
+        default_branch: 'main'
+    source_format: sfdx
+
+tasks:
+    robot:
+        options:
+            suites: robot/sfdc-thanos/tests
+            options:
+                outputdir: robot/sfdc-thanos/results
+
+    robot_testdoc:
+        options:
+            path: robot/sfdc-thanos/tests
+            output: robot/sfdc-thanos/doc/sfdc-thanos_tests.html
+
+    run_tests:
+        options:
+            required_org_code_coverage_percent: 80
