@@ -1,3 +1,4 @@
 steps:
-  - label: ":hammer: Tests"
-    command: echo "Hello world."
+  - label: ":hammer: Install sfdx"
+    command: bash -ex ./scripts/install.sh
+          
