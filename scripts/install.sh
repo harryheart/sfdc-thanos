@@ -28,9 +28,9 @@ which cci
 which sfdx
 
 echo '--- cli version'
-cci version
+# cci version
 
-echo 'sfdx version' 
+echo '--sfdx version' 
 sfdx --version
 sfdx force:org:list
 
