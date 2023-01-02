@@ -23,9 +23,13 @@ which brew
 
 which node
 
-brew install pipx
-pipx ensurepath
-pipx install cumulusci
+which cci
+
+which sfdx
+
+echo '--- cli version'
+cci version
+sfdx --version
 
 # wget -qO- https://developer.salesforce.com/media/salesforce-cli/sfdx-linux-amd64.tar.xz | tar xJ -C sfdx --strip-components 1
 # ./sfdx/install
