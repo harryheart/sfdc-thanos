@@ -15,25 +15,13 @@ env
 
 echo "+++ :hammer: Example tests"
 
-echo -e "\033[33mCongratulations!\033[0m You've successfully run your first build on Buildkite! 👍
-\033[33m$(cat artifacts/thumbsup.txt)\033[0m
-If you have any questions or need help email support@buildkite.com, we'd be happy to help!
-\033[31m<3\033[0m Buildkite
-"
+mkdir sfdx
 
+which wget
 
-echo "+++ :frame_with_picture: Inline image uploaded as a build artifact"
+which brew
 
-function inline_image {
-  printf '\033]1338;url='"$1"';alt='"$2"'\a\n'
-}
-
-inline_image 'artifact://artifacts/image.gif' 'Rainbows'
-
-
-# set -euo pipefail
-
-# mkdir sfdx
+which node
 # wget -qO- https://developer.salesforce.com/media/salesforce-cli/sfdx-linux-amd64.tar.xz | tar xJ -C sfdx --strip-components 1
 # ./sfdx/install
 # sfdx --version
