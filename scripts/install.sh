@@ -14,6 +14,6 @@ env
 
 echo '--- :box: run ci_feature flow' 
 
-echo MY_SECRET_VAR
+echo $MY_SECRET_VAR
 
 cci flow run ci_feature --org dev
