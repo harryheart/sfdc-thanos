@@ -12,18 +12,8 @@ echo "--- :evergreen_tree: Build job environment"
 
 env
 
+echo '--- :box: run ci_feature flow' 
 
-echo "+++ :hammer: Example tests"
-
-
-
-echo '--- cli version'
-# cci version
-
-echo '--- run cci flow' 
+echo MY_SECRET_VAR
 
 cci flow run ci_feature --org dev
-
-# wget -qO- https://developer.salesforce.com/media/salesforce-cli/sfdx-linux-amd64.tar.xz | tar xJ -C sfdx --strip-components 1
-# ./sfdx/install
-# sfdx --version

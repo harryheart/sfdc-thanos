@@ -1,4 +1,9 @@
 steps:
-  - label: ":hammer: Install sfdx"
+  - label: ":hammer: test changes"
     command: "scripts/install.sh"
+
+  # - label: ":hammer: QA"
+  #   command: cci flow run ci_feature --org dev
+
+  - block: ":rocket: Release!"
           
