@@ -16,4 +16,6 @@ echo '--- :box: run ci_feature flow'
 
 echo $MY_SECRET_VAR
 
-cci flow run ci_feature --org dev
+sfdx force:org:list
+
+# cci flow run ci_feature --org dev
