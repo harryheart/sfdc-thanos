@@ -1,7 +1,8 @@
 steps:
   - label: ":hammer: test changes"
     command: "scripts/install.sh"
-    queue: "sfdx"
+    agents:
+      queue: "sfdx"
 
   # - label: ":hammer: QA"
   #   command: cci flow run ci_feature --org dev
