@@ -13,9 +13,11 @@ echo "--- :evergreen_tree: Build job environment"
 env
 
 echo '--- :box: run ci_feature flow' 
-openssl enc -aes-256-cbc -nosalt -d -in /jwt/server.key.enc -K $K -iv $IV -out /jwt/server.key 
+ls jwt
 
-sfdx auth:jwt:grant --clientid $MY_SECRET_VAR --jwtkeyfile /jwt/server.key --username $HUB_UN --setdefaultdevhubusername --setalias CCIDevHub
+openssl enc -aes-256-cbc -nosalt -d -in ./jwt/server.key.enc -K $K -iv $IV -out ./jwt/server.key 
+
+sfdx auth:jwt:grant --clientid $MY_SECRET_VAR --jwtkeyfile ./jwt/server.key --username $HUB_UN --setdefaultdevhubusername --setalias CCIDevHub
 
 
 sfdx force:org:list
